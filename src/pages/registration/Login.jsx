@@ -36,6 +36,18 @@ function Login() {
         } catch (error) {
             console.log(error)
             setLoading(loading)
+
+            // Handle specific error codes
+            toast.error("Login failed! Invalid-credential Entered😊", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
         }
 
     }
@@ -73,7 +85,7 @@ function Login() {
                     </button>
                 </div>
                 <div>
-                    <h2 className='text-white'>Don't have an account <Link className=' text-yellow-500 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-white'>Don't have an account ! <Link className=' text-yellow-500 font-bold' to={'/signup'}>Signup...</Link></h2>
                 </div>
             </div>
         </div>
