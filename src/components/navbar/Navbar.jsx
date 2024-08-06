@@ -152,13 +152,13 @@ function Navbar() {
                     All Products
                   </Link>
                  {user ?  <Link to={'/Home'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                  </Link> :   <Link to={'/signup'}  className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  </Link> : <Link to={'/signup'}  className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                       Signup
                   </Link>}
                     {user ?  <Link to={'/Contactus'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     SellsProduct
-                  </Link> :   <Link to={'/signup'}  className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                      Signup
+                  </Link> :   <Link to={'/login'}  className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                      Login
                     </Link>}
 
                   {user?.user?.email === 'lokeshwagh512@gmail.com' ? 
@@ -173,7 +173,7 @@ function Navbar() {
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-gray-700 ">
+                  <a href="https://quizonhistoryofindia.netlify.app/" className="flex items-center text-gray-700 ">
                     <img
                       src="https://ecommerce-sk.vercel.app/img/indiaflag.png"
                       alt=""
@@ -183,12 +183,12 @@ function Navbar() {
                   </a>
                 </div>
                 <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-gray-700 ">
+                  <a href="https://www.linkedin.com/in/lokesh-wagh-bab067228/" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-10 h-10 rounded-full"
                       // login image
-                      src="https://media.licdn.com/dms/image/D4D03AQGBmU3CiQ3ATA/profile-displayphoto-shrink_100_100/0/1688372400658?e=1712793600&v=beta&t=nk5zJDHAUof69pSgjpci7IVsUjaqtWIA7bwQNd6CoaM"
-                      alt="Lokesh_bhai" />
+                      src="https://media.licdn.com/dms/image/D4D03AQGBmU3CiQ3ATA/profile-displayphoto-shrink_800_800/0/1688372400658?e=1728518400&v=beta&t=14ORE6wRz5BqICoDmWRnc5VTSRbICZditVZssfeqoFI"
+                      alt="Lokesh" />
                   </a>
                 </div>
 
@@ -222,4 +222,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
