@@ -7,8 +7,9 @@ import { toast } from 'react-toastify';
 import { addDoc, collection } from 'firebase/firestore';
 import { fireDB } from '../../fireabase/FirebaseConfig';
 import { MdEmail } from "react-icons/md";
-import Modal from '../../components/modal/Modal';
+//import Modal from '../../components/modal/Modal';
 
+import { IoCashOutline } from "react-icons/io5";
 function Cart() {
 
   const context = useContext(myContext)
@@ -91,10 +92,11 @@ function Cart() {
             </div>
             <div>
               <center><a href="mailto:lokeshwagh@gmail.com"><button className='flex items-center justify-center  w-72 h-10 bg-yellow-500 rounded-lg border-4 border-neutral-950'>ContactUs<MdEmail /></button></a></center>
-              
+
+              {/* here we are add the bay botton with the model */}
+              <center><a href="mailto:lokeshwagh@gmail.com"><button className='flex items-center justify-center  w-72 h-10 bg-yellow-500 rounded-lg border-4 border-neutral-950'>BayNow   <IoCashOutline /></button></a></center>
             </div>
-           
-          </div>
+           </div>
         </div>
       </div>
     </Layout>

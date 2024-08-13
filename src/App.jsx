@@ -15,11 +15,12 @@ import Login from './pages/registration/Login';
 import Signup from './pages/registration/Signup';
 import ProductInfo from './pages/productInfo/ProductInfo';
 import AddProduct from './pages/admin/page/AddProduct';
+import Blog from './pages/blogs/Blog'
 import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
-import Contact from './contact'
+import Contact from './pages/Contact/contact'
 function App() {
   return (
     <MyState>
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Contactus" element={<Contact />} />
           <Route path="/allproducts" element={<Allproducts />} />
+          <Route path="/blogs" element={<Blog/>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/dashboard" element={
             <ProtectedRouteForAdmin>

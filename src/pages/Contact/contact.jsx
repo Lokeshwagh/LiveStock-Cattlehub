@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import Img from "../src/Video/contactUs.png"
+import Img from "../../Video/contactUs.png"
 import { Link } from 'react-router-dom'
 import "./contact.css"
 import { toast } from "react-toastify";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 function Contact(){
     const [userData, setUserData]=useState({
         firstName:"",
